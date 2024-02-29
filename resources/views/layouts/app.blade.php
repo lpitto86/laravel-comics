@@ -1,50 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>@yield('page-title') | Laravel Start 1</title>
 
-        {{-- Stili nell'head --}}
-        <link rel="stylesheet" href="css/style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>@yield('page-title') | Laravel Comics</title>
 
-        {{-- <!-- Includiamo gli assets con la direttiva @vite --> --}}
-        @vite('resources/js/app.js')
+    {{-- font-awesome --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        @yield('head-imports')
-    </head>
-    <body>
+    {{-- Stili nell'head --}}
+    <link rel="stylesheet" href="css/style.css">
 
-        @include('partials.header')
+    {{-- <!-- Includiamo gli assets con la direttiva @vite --> --}}
+    @vite('resources/js/app.js')
 
-        <main>
-            <div class="container">
+    @yield('head-imports')
+</head>
 
-                <div class="row">
+<body>
 
-                    <div class="col">
+    @include('partials.header')
 
-                        <div>
-                            <img class="gatto-img" src="{{ Vite::asset('resources/img/gatto.webp') }}" alt="Gatto">
-                        </div>
+    @yield('main-content')
 
-                        <div class="gatto-bg">
-                            QUESTO DIV AVRA' COME SFONDO IL GATTO
-                        </div>
+    @include('partials.footer')
 
-                        @yield('main-content')
+    {{-- JS da importare nel body --}}
+    @yield('body-imports')
+</body>
 
-                    </div>
-
-                </div>
-
-            </div>
-        </main>
-
-        @include('partials.footer')
-
-        {{-- JS da importare nel body --}}
-        @yield('body-imports')
-    </body>
 </html>

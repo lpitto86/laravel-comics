@@ -1,9 +1,143 @@
-* {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+@import "~bootstrap/scss/bootstrap";
+
+// HEADER
+.nav-height {
+    height: 12vh;
+  }
+.jumbo-height {
+    height: 46vh;
+    background-image: url('../img/jumbotron.jpg');
+    background-size: cover;
 }
 
-main {
-      background-color: lightcoral;
+// MAIN
+.main-one-bg {
+    background-color: #1c1c1c;
+}
+.main-two-bg {
+    background-color: #0082f9;
+}
+.width-a-sixth {
+    width: calc((70vw / 6) - 32px);
+}
+.height-a-sixth {
+    height: calc((70vw / 6) - 32px);
+}
+.absolute {
+    position: absolute;
+    top: calc(-31.5px / 2);
+}
+.margin-cards {
+    margin: 0 16px;
+}
+.main-two-height {
+    height: 15vh;
+}
+.h-40 {
+    height: 40%;
+}
+// FOOTER
+.footer-one-height {
+    height: 46vh;
+}
+.footer-one-bg {
+    background-image: url('../img/footer-bg.jpg');
+}
+.my-container {
+    width: 70vw;
+    height: 100%;
+}
+.col-footer-width {
+    width: calc(100% / 5.8);
+}
+.white {
+    color: white;
+}
+.mb-2 {
+    margin-bottom: 2px;
+}
+.mb-8 {
+    margin-bottom: 8px;
+}
+.mb-16 {
+    margin-bottom: 16px;
+}
+.mb-32 {
+    margin-bottom: 32px;
+}
+.ps-8 {
+    padding-left: 8px;
+}
+.ps-16 {
+    padding-left: 16px;
+}
+.pt-8 {
+    padding-top: 8px;
+}
+.pb-8 {
+    padding-bottom: 8px;
+}
+.pe-8 {
+    padding-right: 8px;
+}
+.pe-16 {
+    padding-right: 16px;
+}
+.pt-24 {
+    padding-top: 24px;
+}
+.pb-24 {
+    padding-bottom: 24px;
+}
+.no-decoration {
+    list-style: none;
+}
+.no-underlining {
+    text-decoration: none;
+}
+.footer-grey {
+    color: #797758;
+}
+.smaller-plus {
+    font-size: 0.8em;
+}
+.grow-one {
+    flex-grow: 1;
+}
+.dc-logo-bg {
+    background-image: url("../img/dc-logo-bg.png");
+    background-size: cover;
+    background-position: center;
+}
+.footer-two-height {
+    height: 12vh;
+}
+.footer-two-bg {
+    background-color: #303030;
+}
+.border-botton-color {
+    border: 3px solid #0084fd;
+}
+.footer-blu {
+    color: #0084fd;
+}
+.black {
+    color: black;
+}
+// COMICS PAGE
+.my-container-two {
+    width: 60vw;
+    margin: 0 auto;
+}
+.width-70{
+    width: 70%;
+}
+.width-30{
+    width: 30%;
+}
+.green {
+    background-color: #55BA59;
+}
+.my-light-grey {
+    background-color: #F6F6F6;
 }
